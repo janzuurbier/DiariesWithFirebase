@@ -35,4 +35,10 @@ public class DiaryEntry {
         this.date = date;
     }
 
+    @Override
+    public boolean equals(Object o){
+        DiaryEntry e = (DiaryEntry)o;
+        return this.key.equals(e.key);
+    }
+
 }
